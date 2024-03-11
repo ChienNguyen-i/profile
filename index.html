@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>📢 Welcome to the information page of CNX 🎉</title>
+    <meta
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+      name="viewport"
+    />
+    <link
+      href="./images/logo/logo.png"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div id="root">
+      <div id="main">
+        <div class="container">
+          <header>
+            <div id="cover-image">
+              <div class="control-header">
+                <div class="audio-box">
+                  <div class="audio-image" id="image-audio">
+                    <button id="play-audio" title="Play audio">
+                      <i class="fa-solid fa-play"></i>
+                    </button>
+                    <button id="pause-audio" title="Pause audio">
+                      <div id="bars">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                      </div>
+                    </button>
+                    <audio id="audio" src="" type="audio/mp3"></audio>
+                  </div>
+                  <div class="audio-name">
+                    <marquee scrollamount="3" id="name-audio"></marquee>
+                  </div>
+                </div>
+                <div class="button-box">
+                  <button id="open-modal-weather" title="Weather">
+                    <i class="fa-solid fa-cloud"></i>
+                  </button>
+                  <button id="btn-share-page" title="Share">
+                    <i class="fa-solid fa-share-from-square"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div id="profile-header">
+              <div id="avatar-image"></div>
+              <div id="name">
+                <p class="names" id="first-name">
+                  Nguyễn Xuân Chiến
+                  <i class="fa-regular fa-circle-check" title="Verified"></i>
+                </p>
+                <div id="skills">
+                  <div class="skill-item light-green">
+                    <i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;Only I can
+                    change my life. No one can do it for me.
+                  </div>
+                  <div class="skill-item light-orange">
+                    <i class="fa-solid fa-location-dot"></i>&nbsp;&nbsp;Hai
+                    Duong
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="button-groups">
+              <button
+                class="btn custom-btn btn-1"
+                id="open-modal-message"
+                title="Send message"
+              >
+                <span
+                  >Click!&nbsp;&nbsp;<i
+                    class="fa-solid fa-hand-pointer"
+                  ></i></span
+                ><span
+                  ><i class="fa-solid fa-message"></i>&nbsp;&nbsp;Message</span
+                >
+              </button>
+              <button
+                class="btn custom-btn btn-2"
+                id="btn-download-vcf"
+                title="Save contact"
+              >
+                <span
+                  >Click!&nbsp;&nbsp;<i
+                    class="fa-solid fa-hand-pointer"
+                  ></i></span
+                ><span
+                  ><i class="fa-regular fa-address-card"></i
+                  >&nbsp;&nbsp;Save</span
+                >
+              </button>
+            </div>
+          </header>
+          <div id="content-body">
+            <p class="drop-title">Social Media Link</p>
+            <div id="link-box">
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="
+                    background-image: url('./images/icon/icon-facebook.png');
+                  "
+                ></div>
+                <div class="link-content">
+                  <p>Facebook</p>
+                  <span onclick="copyText('chiennguyen.0102')"
+                    >@chiennguyen.0102</span
+                  >
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('https://www.facebook.com/chiennguyen.0102', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="
+                    background-image: url('./images/icon/icon-messenger.png');
+                  "
+                ></div>
+                <div class="link-content">
+                  <p>Messenger</p>
+                  <span onclick="copyText('chiennguyen.0102')"
+                    >@chiennguyen.0102</span
+                  >
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('https://www.messenger.com/t/100084595906319', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-zalo.png')"
+                ></div>
+                <div class="link-content">
+                  <p>Zalo</p>
+                  <span onclick="copyText('0948098195')">0948098195</span>
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('https://zalo.me/0948098195', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-gmail.png')"
+                ></div>
+                <div class="link-content">
+                  <p>Gmail</p>
+                  <span onclick="copyText('nguyenchien200142@gmail.com')"
+                    >nguyenchien200142@gmail.com</span
+                  >
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('mailto:nguyenchien200142@gmail.com', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-phone.png')"
+                ></div>
+                <div class="link-content">
+                  <p>Phone</p>
+                  <span onclick="copyText('0948098195')">0948098195</span>
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('tel:0948098195', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-sms.png')"
+                ></div>
+                <div class="link-content">
+                  <p>SMS</p>
+                  <span onclick="copyText('0948098195')">0948098195</span>
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('sms:0948098195', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-x.png')"
+                ></div>
+                <div class="link-content">
+                  <p>X (Twitter)</p>
+                  <span onclick="copyText('chiennguyen_12')"
+                    >@chiennguyen_12</span
+                  >
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('https://twitter.com/chiennguyen_12', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="
+                    background-image: url('./images/icon/icon-telegram.png');
+                  "
+                ></div>
+                <div class="link-content">
+                  <p>Telegram</p>
+                  <span onclick="copyText('chiennguyen12')"
+                    >@chiennguyen12</span
+                  >
+                </div>
+                <div class="link-btn">
+                  <div
+                    class="link-btn-chill light-blue"
+                    onclick="window.open('https://t.me/chiennguyen12', '_blank')"
+                  >
+                    OPEN
+                  </div>
+                </div>
+              </div>
+              <div class="link-item">
+                <div
+                  class="bio-story-thumb"
+                  style="background-image: url('./images/icon/icon-mbbank.png')"
+                ></div>
+                <div class="link-content">
+                  <p>MB Bank</p>
+                  <span onclick="copyText('0948098195')">0948098195</span>
+                </div>
+                <div class="link-btn">
+                  <div class="link-btn-chill light-blue" id="open-modal-bank">
+                    OPEN
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            , made with ❤️ by
+            <a href="https://chiennguyen-i.github.io/profile/" target="_blank"
+              >CNX</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+    <div class="modal closed" id="modalBank">
+      <button class="close-button" id="close-modal-bank">&times;</button>
+      <div class="modal-guts">
+        <img src="./images/logo/logo_mb_bank.png" alt="bank" class="logo" />
+        <img src="./images/qr/qr_mb_bank_195.png" alt="bank" class="qr" />
+        <div class="info">
+          <p>NGUYEN XUAN CHIEN</p>
+          <p>0948098195</p>
+        </div>
+        <div class="button-groups">
+          <button
+            class="btn custom-btn btn-1"
+            id="btn-download-qr-bank"
+            title="Download QR code"
+          >
+            <span
+              >Click!&nbsp;&nbsp;<i class="fa-solid fa-hand-pointer"></i></span
+            ><span
+              ><i class="fa-solid fa-download"></i>&nbsp;&nbsp;Download QR</span
+            >
+          </button>
+          <button
+            class="btn custom-btn btn-2"
+            id="btn-copy-number-bank"
+            title="Copy account number"
+          >
+            <span
+              >Click!&nbsp;&nbsp;<i class="fa-solid fa-hand-pointer"></i></span
+            ><span><i class="fa-solid fa-copy"></i>&nbsp;&nbsp;Copy</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal closed" id="modalMessage">
+      <button class="close-button" id="close-modal-message">&times;</button>
+      <div class="modal-guts">
+        <h3>Message</h3>
+        <hr />
+        <form name="message-form" method="post" id="frmMsg">
+          <div class="form-control">
+            <label>Full name</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              id="name-input"
+              onkeyup="validateName()"
+            />
+            <div class="error" id="name-error"></div>
+          </div>
+          <div class="form-control">
+            <label>Phone number</label>
+            <input
+              type="text"
+              name="phone"
+              placeholder="Enter your phone number"
+              id="phone-input"
+              onkeyup="validatePhone()"
+            />
+            <div class="error" id="phone-error"></div>
+          </div>
+          <div class="form-control">
+            <label>Email address</label>
+            <input
+              type="text"
+              name="email"
+              placeholder="Enter your email address"
+              id="email-input"
+              onkeyup="validateEmail()"
+            />
+            <div class="error" id="email-error"></div>
+            <div class="check" id="email-check"></div>
+          </div>
+          <div class="form-control">
+            <label>Subject</label>
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              id="subject-input"
+              onkeyup="validateSubject()"
+            />
+            <div class="error" id="subject-error"></div>
+          </div>
+          <div class="form-control">
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="Enter your message"
+              id="msg-input"
+              onkeyup="validateMsg()"
+            ></textarea>
+            <div class="error" id="msg-error"></div>
+          </div>
+          <hr />
+          <div class="button-groups">
+            <button
+              type="reset"
+              class="btn custom-btn btn-1"
+              id="btn-refresh-form-message"
+              title="Refresh form"
+            >
+              <span
+                >Click!&nbsp;&nbsp;<i
+                  class="fa-solid fa-hand-pointer"
+                ></i></span
+              ><span
+                ><i class="fa-solid fa-arrows-rotate"></i
+                >&nbsp;&nbsp;Refresh</span
+              >
+            </button>
+            <button
+              type="submit"
+              class="btn custom-btn btn-2"
+              id="btn-send-form-message"
+              title="Send message"
+            >
+              <span
+                >Click!&nbsp;&nbsp;<i
+                  class="fa-solid fa-hand-pointer"
+                ></i></span
+              ><span
+                ><i class="fa-regular fa-paper-plane"></i>&nbsp;&nbsp;Send</span
+              >
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal closed" id="modalWeather">
+      <button class="close-button" id="close-modal-weather">&times;</button>
+      <div class="modal-guts">
+        <h3>Weather</h3>
+        <hr />
+        <form name="weather-form" method="post" id="frmWeather">
+          <div class="search-box">
+            <label>City name</label>
+            <input
+              type="text"
+              name="city-name"
+              placeholder="Enter city name"
+              id="city-name-input"
+            />
+            <div class="btns">
+              <button type="submit" id="btn-search-weather">
+                <i class="fas fa-search"></i>
+              </button>
+              <button type="button" id="btn-get-location">
+                <i class="fas fa-location"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div id="w-200">
+          <div class="card-location">
+            <div class="card-left">
+              <i class="fa-solid fa-location-dot"></i>
+              <span id="current-location"></span>
+              <p id="current-day"></p>
+              <p id="current-date"></p>
+            </div>
+            <div class="card-right">
+              <img src="" id="icon-weather" />
+              <div class="temp">
+                <p>
+                  <span id="current-temperature"></span>
+                  <button class="active" id="current-celsius">°C</button> |
+                  <button id="current-fahrenheit">°F</button>
+                </p>
+                <p id="description-weather"></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-details">
+            <div class="card-left">
+              <p>
+                <i class="fa-solid fa-temperature-three-quarters"></i>Feels
+                like: <span id="w-feels-like"></span>°
+              </p>
+              <p>
+                <i class="fa-solid fa-cloud"></i>Cloudy:
+                <span id="w-clouds"></span>%
+              </p>
+              <p>
+                <i class="fa-solid fa-droplet"></i>Humidity:
+                <span id="w-humidity"></span>%
+              </p>
+              <p>
+                <i class="fa-solid fa-wind"></i>Wind:
+                <span id="w-wind-speed"></span>m/s
+              </p>
+            </div>
+            <div class="card-left">
+              <p>
+                <i class="fa-solid fa-gauge"></i>Pressure:
+                <span id="w-pressure"></span>hPa
+              </p>
+              <p>
+                <i class="fa-solid fa-eye"></i>Visibility:
+                <span id="w-visibility"></span>m
+              </p>
+              <p>
+                <i class="fa-regular fa-sun"></i>Sunrise:
+                <span id="w-sunrise"></span>
+              </p>
+              <p>
+                <i class="fa-solid fa-mountain-sun"></i>Sunset:
+                <span id="w-sunset"></span>
+              </p>
+            </div>
+          </div>
+          <div class="card-comment" id="comment-weather"></div>
+          <div class="card-future">
+            <div class="title">Forecast for the day</div>
+            <div class="details" id="day-forecast"></div>
+          </div>
+          <hr />
+          <div class="card-future">
+            <div class="title">5-day forecast</div>
+            <div class="details" id="five-day-forecast"></div>
+          </div>
+        </div>
+        <div id="w-404">
+          <img src="./images/others/404.png" />
+        </div>
+      </div>
+    </div>
+
+    <ul class="notifications"></ul>
+
+    <div class="snowflakes" aria-hidden="true">
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+      <div class="snowflake"><i class="fa-solid fa-circle"></i></div>
+    </div>
+
+    <div id="preloader">
+      <img src="./images/logo/logo.png" alt="logo" />
+      <div id="loader"></div>
+    </div>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
